@@ -5,7 +5,7 @@
       <img class="card-img image1 " src= {{article.urlToImage}}
         alt="">
       <div class="card-img-overlay">
-        <h5 class="card-title" style="text-decoration:underline" *ngIf="article.title">{{article.title}}</h5>
+       <a href="{{article.url}}" style="color:white"> <h5 class="card-title" style="text-decoration:underline" *ngIf="article.title">{{article.title}}</h5></a>
         <p class="card-text"*ngIf="article.description">{{article.description}} . . .</p>
         <p class="card-text" *ngIf="article.author">- {{article.author}}</p>
       </div>
